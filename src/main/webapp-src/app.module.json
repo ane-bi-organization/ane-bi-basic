@@ -1,0 +1,132 @@
+{
+    "appContext": {
+        "prod": "http://localhost:8080",
+        "dev": "http://localhost:8080",
+        "stage": "http://localhost:8080/ane-bi-basic"
+    },
+    "constants": {
+        "local" : {
+            "SERVER_API_URL": "/"
+        } ,
+        "prod": {
+            "SERVER_API_URL": "/"
+        },
+        "dev": {
+            "SERVER_API_URL": "/"
+        },
+        "stage": {
+            "SERVER_API_URL": "/ane-bi-basic/"
+        }
+    },
+    "apps": {
+        "index": {
+            "modules": ["core", "blocks", "smartadmin"],
+            "dependencies": {
+                "jquery": "~2.1.0",
+                "bootstrap": "~3.3.4",
+                "font-awesome": "4.3.0",
+                "angular": "1.4.4" ,
+                "jquery-ui": "1.10.3" 
+            }
+        } ,
+        "user-example": {
+            "modules": ["core", "blocks", "smartadmin" , "user-example"],
+            "dependencies": {
+                "font-awesome": "4.3.0",
+                "jquery": "~2.1.0",
+                "jquery-ui": "1.10.3"  ,
+                "bootstrap": "~3.3.4",
+                "angular": "1.4.4" ,
+                "angular-ui-router": "0.2.17"
+            }
+        },
+        "dictionary": {
+            "modules": ["core", "blocks", "smartadmin" , "dictionary"],
+            "dependencies": {
+                "font-awesome": "4.3.0",
+                "jquery": "~2.1.0",
+                "jquery-ui": "1.10.3"  ,
+                "bootstrap": "~3.3.4",
+                "angular": "1.4.4" ,
+                "angular-ui-router": "0.2.17"
+            }
+        },
+        "radioStandard": {
+            "modules": ["core", "blocks", "smartadmin" , "radioStandard"],
+            "dependencies": {
+                "font-awesome": "4.3.0",
+                "jquery": "~2.1.0",
+                "jquery-ui": "1.10.3"  ,
+                "bootstrap": "~3.3.4",
+                "angular": "1.4.4" ,
+                "angular-ui-router": "0.2.17"
+            }
+        },
+        "extradays": {
+            "modules": ["core", "blocks", "smartadmin" , "extradays"],
+            "dependencies": {
+                "font-awesome": "4.3.0",
+                "jquery": "~2.1.0",
+                "jquery-ui": "1.10.3"  ,
+                "bootstrap": "~3.3.4",
+                "angular": "1.4.4" ,
+                "angular-ui-router": "0.2.17"
+            }
+        },
+         "anekpi": {
+            "modules": ["core", "blocks", "smartadmin" , "anekpi"],
+            "dependencies": {
+                "font-awesome": "4.3.0",
+                "jquery": "~2.1.0",
+                "jquery-ui": "1.10.3"  ,
+                "bootstrap": "~3.3.4",
+                "angular": "1.4.4" ,
+                "angular-ui-router": "0.2.17"
+            }
+        },
+          "plantime": {
+            "modules": ["core", "blocks", "smartadmin" , "plantime"],
+            "dependencies": {
+                "font-awesome": "4.3.0",
+                "jquery": "~2.1.0",
+                "jquery-ui": "1.10.3"  ,
+                "bootstrap": "~3.3.4",
+                "angular": "1.4.4" ,
+                "angular-ui-router": "0.2.17"
+            }
+        },
+         "dailymodel": {
+            "modules": ["core", "blocks", "smartadmin" , "dailymodel"],
+            "dependencies": {
+                "font-awesome": "4.3.0",
+                "jquery": "~2.1.0",
+                "jquery-ui": "1.10.3"  ,
+                "bootstrap": "~3.3.4",
+                "angular": "1.4.4" ,
+                "angular-ui-router": "0.2.17"
+            }
+        },
+         "targetval": {
+            "modules": ["core", "blocks", "smartadmin" , "targetval"],
+            "dependencies": {
+                "font-awesome": "4.3.0",
+                "jquery": "~2.1.0",
+                "jquery-ui": "1.10.3"  ,
+                "bootstrap": "~3.3.4",
+                "angular": "1.4.4" ,
+                "angular-ui-router": "0.2.17"
+            }
+        },
+        "siteTypeManager": {
+            "modules": ["core", "blocks", "smartadmin" , "siteTypeManager"],
+            "dependencies": {
+                "font-awesome": "4.3.0",
+                "jquery": "~2.1.0",
+                "jquery-ui": "1.10.3"  ,
+                "bootstrap": "~3.3.4",
+                "angular": "1.4.4" ,
+                "angular-ui-router": "0.2.17"
+            }
+        }
+    }
+}
