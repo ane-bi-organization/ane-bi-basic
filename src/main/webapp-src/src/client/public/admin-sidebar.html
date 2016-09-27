@@ -1,0 +1,76 @@
+<header id="header">
+    <div id="logo-group">
+        <span id="logo"> 
+                    <img src="images/logo.png" alt="SmartAdmin"> 
+                </span>
+    </div>
+    <div class="pull-right">
+        <div id="hide-menu" class="btn-header pull-right">
+            <span> 
+                    <a href="javascript:void(0);" data-action="toggleMenu" title="Collapse Menu">
+                        <i class="fa fa-reorder"></i>
+                    </a> 
+                </span>
+        </div>
+        <div id="logout" class="btn-header transparent pull-right">
+            <span> <a href="login.html" title="Sign Out" data-action="userLogout" data-logout-msg="You can improve your security further after logging out by closing this opened browser"><i class="fa fa-sign-out"></i></a> </span>
+        </div>
+    </div>
+</header>
+<!-- END HEADER -->
+<!-- Left panel : Navigation area -->
+<!-- Note: This width of the aside area can be adjusted through LESS variables -->
+<aside id="left-panel" ng-controller="SmartadminController as vm">
+    <div class="login-info">
+        <span> 
+            <a href="javascript:void(0);" id="show-shortcut" data-action="toggleShortcut">
+                <img src="images/avatars/sunny.png" alt="me" class="online" /> 
+            <span>john.doe </span>
+        </a>
+        </span>
+    </div>
+    <!-- end user info -->
+    <!-- NAVIGATION : This navigation is also responsive-->
+    <nav>
+        <ul>
+            <li>
+        		<a href="#"><i class="fa fa-lg fa-fw fa-desktop"></i> <span class="menu-item-parent">系统管理</span></a>
+        		<ul>
+        			<li active-url="dictionary">
+        				<a href="dictionary.html" >数据字典</a>
+        			</li>
+        			<li active-url="siteTypeManager">
+        				<a href="siteTypeManager.html">分拨属性管理</a>
+        			</li>
+        			<li active-url="provDictrt">
+        				<a href="provDictrt.html">省区大区管理</a>
+        			</li>
+        			<li active-url="organization">
+        				<a href="organization.html">组织架构管理</a>
+        			</li>
+        			<li active-url="radioStandard">
+        				<a href="radioStandard.html" >班车承接网点比例标准</a>
+        			</li>
+        			<li active-url="extradays">
+        				<a href="extradays.html">全国时效额外天数</a>
+        			</li>
+        			<li active-url="anekpi">
+        				<a href="anekpi.html">KPI基础资料管理</a>
+        			</li>
+        			<li active-url="targetval">
+        				<a href="targetval.html">目标值维护</a>
+        			</li>
+        			<li active-url="plantime">
+        				<a href="plantime.html">分拨计划操作时间管理</a>
+        			</li>
+        			<li active-url="dailymodel">
+        				<a href="dailymodel.html">日报模块</a>
+        			</li>
+        		</ul>
+        	</li>
+        </ul>
+    </nav>
+    <span class="minifyme" data-action="minifyMenu"> 
+            <i class="fa fa-arrow-circle-left hit"></i> 
+        </span>
+</aside>
